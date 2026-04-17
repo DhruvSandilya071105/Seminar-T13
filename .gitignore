@@ -1,55 +1,57 @@
-# Prerequisites
-*.d
-
-# Object files
+# ==============================
+# Compiled Binaries & Objects
+# ==============================
 *.o
-*.ko
-*.obj
+*.a
+*.so
+*.out
 *.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Test & benchmark executables
+test_sha384
+test_sha384_avx2
+test_rsa
+bench_sha384
+bench_rsa
 
-# Precompiled Headers
-*.gch
-*.pch
+# ==============================
+# Build Artifacts
+# ==============================
+build/
+dist/
+*.d
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# ==============================
+# SDE / Profiling Output
+# ==============================
+sde-mix-out.txt
+*.mix
+*.dcfg
+*.bbmap
+mix.out
+sde_*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# ==============================
+# Intermediate Assembly Output
+# ==============================
+cleaned_*.asm
+*.asm.o
+__pycache__/
+*.pyc
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# ==============================
+# Editor & IDE Files
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# ==============================
+# Logs & Temp Files
+# ==============================
+*.log
+*.tmp
+/tmp/
